@@ -1,12 +1,10 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import CustomComponent from "./src/screens/CustomComponent";
 
-export default function App() {
+export default function CustomComponent() {
 	return (
 		<View style={styles.container}>
-			<Text>hello world</Text>
-			<CustomComponent />
+			<Text>this is my custom components😄</Text>
 		</View>
 	);
 }
