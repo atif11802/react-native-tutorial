@@ -4,15 +4,13 @@ import { StyleSheet, Text, View } from "react-native";
 export default function CustomComponent() {
 	return (
 		<View style={styles.container}>
-			<Text>this is my custom components😄</Text>
+			<Text style={styles.insiderText}>this is my custom components😄</Text>
 		</View>
 	);
 }
 
 const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		alignItems: "center",
-		justifyContent: "center",
+	insiderText: {
+		color: "red",
 	},
 });
