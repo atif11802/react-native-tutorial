@@ -1,8 +1,46 @@
 import { StyleSheet, Text, View, Image, Linking } from "react-native";
 import React from "react";
 import { TouchableOpacity } from "react-native-web";
+import {
+	JosefinSans_100Thin,
+	JosefinSans_200ExtraLight,
+	JosefinSans_300Light,
+	JosefinSans_400Regular,
+	JosefinSans_500Medium,
+	JosefinSans_700Bold,
+	JosefinSans_100Thin_Italic,
+	JosefinSans_200ExtraLight_Italic,
+	JosefinSans_400Regular_Italic,
+	JosefinSans_500Medium_Italic,
+	JosefinSans_600SemiBold_Italic,
+	JosefinSans_700Bold_Italic,
+} from "@expo-google-fonts/josefin-sans";
+import { Allura_400Regular } from "@expo-google-fonts/allura";
+
+import { useFonts } from "expo-font";
+import AppLoading from "expo-app-loading";
 
 const NetflixCard = () => {
+	let [fontsLoaded] = useFonts({
+		JosefinSans_100Thin,
+		JosefinSans_200ExtraLight,
+		JosefinSans_300Light,
+		JosefinSans_400Regular,
+		JosefinSans_500Medium,
+		JosefinSans_700Bold,
+		JosefinSans_100Thin_Italic,
+		JosefinSans_200ExtraLight_Italic,
+		JosefinSans_400Regular_Italic,
+		JosefinSans_500Medium_Italic,
+		JosefinSans_600SemiBold_Italic,
+		JosefinSans_700Bold_Italic,
+		Allura_400Regular,
+	});
+
+	if (!fontsLoaded) {
+		return <AppLoading />;
+	}
+
 	const onPress = () => {
 		console.log("hello");
 		Linking.openURL("https://www.netflix.com/bd/");
@@ -52,6 +90,7 @@ const styles = StyleSheet.create({
 		fontSize: 30,
 		textAlign: "center",
 		color: "blue",
+		fontFamily: "Allura_400Regular",
 	},
 	img: {
 		width: "100%",
@@ -69,12 +108,13 @@ const styles = StyleSheet.create({
 	},
 	poster__title: {
 		fontSize: 30,
-		color: "red",
+		color: "#222",
 		textAlign: "center",
 	},
 	poster__text: {
 		fontSize: 20,
 		color: "#111",
+		fontFamily: "Allura_400Regular",
 	},
 	button: {
 		backgroundColor: "blue",
