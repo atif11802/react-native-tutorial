@@ -87,9 +87,9 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 	},
 	textH1: {
-		fontSize: 30,
+		fontSize: 40,
 		textAlign: "center",
-		color: "blue",
+		color: "rgb(0, 255, 0)",
 		fontFamily: "Allura_400Regular",
 	},
 	img: {
@@ -110,11 +110,24 @@ const styles = StyleSheet.create({
 		fontSize: 30,
 		color: "#222",
 		textAlign: "center",
+		textShadowOffset: { width: 3, height: 3 },
+		textShadowRadius: 10,
+		textShadowColor: "rgba(0,0,0,0.5)",
+		textTransform: "capitalize",
+
+		// fontStyle: "italic",
+		// fontWeight: "light",
+		// fontVariant: ["small-caps"],
+		// letterSpacing: 1,
 	},
 	poster__text: {
+		textAlign: "justify",
+
 		fontSize: 20,
 		color: "#111",
 		fontFamily: "Allura_400Regular",
+		letterSpacing: 1,
+		lineHeight: 22,
 	},
 	button: {
 		backgroundColor: "blue",
