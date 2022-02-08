@@ -1,18 +1,15 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import NetflixCard from "./src/components/NetflixCard";
+import DemoStyles from "./src/components/DemoStyles";
 
 export default function App() {
 	return (
 		<View style={styles.container}>
-			<NetflixCard />
+			<DemoStyles />
 		</View>
 	);
 }
 
 const styles = StyleSheet.create({
-	container: {
-		backgroundColor: "#999",
-		width: "100%",
-	},
+	container: {},
 });
