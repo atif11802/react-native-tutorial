@@ -11,19 +11,25 @@ export default function CounterNumber() {
 				<Text>{counter}</Text>
 			</View>
 			<TouchableOpacity
+				activeOpacity={0.3}
 				style={styles.button}
-				onPress={() => setCounter(counter + 1)}
+				onPress={() => setCounter(counter + 10)}
 			>
-				<Text>Increment</Text>
-			</TouchableOpacity>
-			<TouchableOpacity style={styles.button} onPress={() => setCounter(0)}>
-				<Text>Reset</Text>
+				<Text style={styles.text}>Increment +10</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
 				style={styles.button}
-				onPress={() => setCounter(counter - 1)}
+				onPress={() => setCounter(0)}
+				activeOpacity={0.3}
 			>
-				<Text>Decrement</Text>
+				<Text style={styles.text}>Reset</Text>
+			</TouchableOpacity>
+			<TouchableOpacity
+				style={styles.button}
+				onPress={() => setCounter(counter - 10)}
+				activeOpacity={0.3}
+			>
+				<Text style={styles.text}>Decrement -10</Text>
 			</TouchableOpacity>
 		</View>
 	);
@@ -42,9 +48,13 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 	},
 	button: {
-		backgroundColor: "#999",
+		backgroundColor: "#c31432",
 		padding: "10px",
 		borderRadius: "5px",
 		marginTop: "10px",
+	},
+	text: {
+		color: "#fff",
+		fontSize: "20px",
 	},
 });
