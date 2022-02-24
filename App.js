@@ -1,15 +1,18 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import DemoStyles from "./src/components/DemoStyles";
+import CounterNumber from "./src/screens/CounterNumber";
 
 export default function App() {
 	return (
 		<View style={styles.container}>
-			<DemoStyles />
+			<CounterNumber />
 		</View>
 	);
 }
 
 const styles = StyleSheet.create({
-	container: {},
+	container: {
+		backgroundColor: "#fff",
+		minHeight: "100%",
+	},
 });
