@@ -8,7 +8,7 @@ export default function CounterNumber() {
 		<View style={styles.container}>
 			<Text>CounterNumber</Text>
 			<View style={styles.counter}>
-				<Text>{counter}</Text>
+				<Text style={styles.counterNumber}>{counter}</Text>
 			</View>
 			<TouchableOpacity
 				activeOpacity={0.3}
@@ -26,7 +26,11 @@ export default function CounterNumber() {
 			</TouchableOpacity>
 			<TouchableOpacity
 				style={styles.button}
-				onPress={() => setCounter(counter - 10)}
+				onPress={() => {
+					if (counter > 0) {
+						setCounter(counter - 10);
+					}
+				}}
 				activeOpacity={0.3}
 			>
 				<Text style={styles.text}>Decrement -10</Text>
@@ -47,11 +51,18 @@ const styles = StyleSheet.create({
 		flexDirection: "column",
 		alignItems: "center",
 	},
+	counterNumber: {
+		fontSize: "50px",
+		fontWeight: "bold",
+		color: "#e96443",
+	},
 	button: {
 		backgroundColor: "#c31432",
 		padding: "10px",
 		borderRadius: "5px",
 		marginTop: "10px",
+		minWidth: "200px",
+		alignItems: "center",
 	},
 	text: {
 		color: "#fff",

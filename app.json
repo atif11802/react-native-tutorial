@@ -1,37 +1,35 @@
 {
-  "expo": {
-    "name": "react-native-tutorial",
-    "slug": "react-native-tutorial",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true,
-      "buildNumber": "1.0.0",
-      "bundleIdentifier": "com.atif11802.reactnativetutorial"
-    },
-    "android": {
-      "versionCode": 1,
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      },
-      "package": "com.atif11802.reactnativetutorial"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "description": ""
-  }
+	"expo": {
+		"name": "react-native-tutorial v2",
+		"slug": "react-native-tutorial",
+		"version": "1.0.1",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"buildNumber": "1.0.0",
+			"bundleIdentifier": "com.atif11802.reactnativetutorial"
+		},
+		"android": {
+			"versionCode": 2,
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#FFFFFF"
+			},
+			"package": "com.atif11802.reactnativetutorial"
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		},
+		"description": ""
+	}
 }
