@@ -1,11 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import ColorGenerator from "./src/project/ColorGenerator";
+import HookEffect from "./src/screens/HookEffect";
 
 export default function App() {
 	return (
 		<View style={styles.container}>
-			<ColorGenerator />
+			<HookEffect />
 		</View>
 	);
 }
