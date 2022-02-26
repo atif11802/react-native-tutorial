@@ -1,11 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import HookEffect from "./src/screens/HookEffect";
+import ContactPage from "./src/screens/ContactPage";
 
 export default function App() {
 	return (
 		<View style={styles.container}>
-			<HookEffect />
+			<ContactPage />
 		</View>
 	);
 }

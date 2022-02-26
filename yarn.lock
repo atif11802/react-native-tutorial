@@ -1057,6 +1057,16 @@
   resolved "https://registry.yarnpkg.com/@expo-google-fonts/allura/-/allura-0.2.2.tgz#f17f3911000268b2f9b52d0ef60b8465b7cfe5d6"
   integrity sha512-ZxG8UI0nZLQB4arKg1i8r47PPrQM2q98K8+DULNBv1O06AcQAPQpJIVk4B+2gc5eCHUytGgkyiWVlony0/tTcA==
 
+"@expo-google-fonts/bad-script@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/bad-script/-/bad-script-0.2.2.tgz#401d3a70195d31bd5d070957cc22d8c933bc269a"
+  integrity sha512-BRn4J2NonRdexeiqKR36QJSjrFcUCQlrMX2X4eFFvTULNh32pvR0XlFxc/0ek+Gc/fmINdqk27KDTq8jIe+jmA==
+
+"@expo-google-fonts/denk-one@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/denk-one/-/denk-one-0.2.2.tgz#90f525116b6fc08caf239b2fa7fee344b70cd953"
+  integrity sha512-0RTDlh1eB5wvhD3eDaSUNSyDrCIagTIZYYPyqatNmD+TwaxjaanAx/uLqGy2+L5n1mEV1dDD6CKIMoiFxfzteg==
+
 "@expo-google-fonts/josefin-sans@^0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@expo-google-fonts/josefin-sans/-/josefin-sans-0.2.2.tgz#55ba9c00deff2ac63a3f0cd02b290f8e8d2c48e1"
@@ -2506,6 +2516,11 @@ expo-asset@~8.4.6:
     md5-file "^3.2.3"
     path-browserify "^1.0.0"
     url-parse "^1.4.4"
+
+expo-checkbox@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/expo-checkbox/-/expo-checkbox-2.0.0.tgz#417f5e6c4e3b4404e479064adab841bb2bef4d74"
+  integrity sha512-ZvDdpHRyyTd6P4JnqqJKyLzg8iKrvhHSXOKBK2uc/Xq5MWBj1JNtn2FCGs0oNpG9H1rt8/gV86Wzy96onxE7bw==
 
 expo-constants@~13.0.0:
   version "13.0.0"

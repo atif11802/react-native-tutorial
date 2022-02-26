@@ -1,4 +1,11 @@
-import { StyleSheet, Text, View, FlatList, Image } from "react-native";
+import {
+	StyleSheet,
+	Text,
+	View,
+	FlatList,
+	Image,
+	ActivityIndicator,
+} from "react-native";
 import React, { useEffect, useState } from "react";
 
 const HookEffect = () => {
@@ -25,7 +32,11 @@ const HookEffect = () => {
 	return (
 		<View style={styles.container}>
 			<Text>Api data</Text>
-			{loading && <Text>Loading...</Text>}
+			{loading && (
+				<View style={styles.loading}>
+					<ActivityIndicator size='large' color='#0000ff' />
+				</View>
+			)}
 
 			<FlatList
 				keyExtractor={(item) => item.id}
@@ -68,5 +79,11 @@ const styles = StyleSheet.create({
 	price: {
 		fontSize: 15,
 		marginTop: 10,
+	},
+	loading: {
+		display: "flex",
+		justifyContent: "center",
+		alignItems: "center",
+		minHeight: "100vh",
 	},
 });
