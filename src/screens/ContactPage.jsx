@@ -7,14 +7,14 @@ import { DenkOne_400Regular } from "@expo-google-fonts/denk-one";
 import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";
 
-const ContactPage = () => {
+const ContactPage = ({ navigation }) => {
 	const [checked, setChecked] = React.useState(false);
 	const [name, setName] = React.useState("");
 	const [password, setPassword] = React.useState("");
 
 	const handleCheck = () => {
 		if (name === "atif" && password === "ratul") {
-			Alert.alert(`Welcome ${name}`);
+			navigation.navigate("Home", { myName: `${name}` });
 		} else {
 			Alert.alert(`Wrong Credentials`);
 		}
